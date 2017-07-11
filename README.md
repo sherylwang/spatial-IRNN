@@ -39,19 +39,9 @@ Please refer to the following papers if you find the source code helpful:
         Title = {Siamese recurrent architecture for visual tracking,  
         Booktitle = {International Conference on Image Processing (ICIP)},  
         Year = {2017}
-    }
+    }  
+
 Contact: hong.chang@vipl.ict.ac.cn  
+
 ====================================================================
 =======
-Please refer to the following papers if you find the source code helpful:
-
-Xiaqing Xu, Bingpeng Ma, Hong Chang, Xilin Chen
-
-SIAMESE RECURRENT ARCHITECTURE FOR VISUAL TRACKING
-
-In Proc. ICIP 2017.
-
-Contact: xiaqing.xu@vipl.ict.ac.cn
-
-================================================================================
-
