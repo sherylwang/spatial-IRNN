@@ -31,7 +31,7 @@ For an example, please refer to the models/ directory! The 'example.prototxt'
 demonstrates the configuration of a single spatial-IRNN layer.
 
 ------------------------------------------------------------------
-<<<<<<< HEAD
+
 Please refer to the following papers if you find the source code helpful:  
 
     @inproceedings{xu2017siamese,  
@@ -54,4 +54,4 @@ In Proc. ICIP 2017.
 Contact: xiaqing.xu@vipl.ict.ac.cn
 
 ================================================================================
->>>>>>> 4f779779af44b359ef73da9c6eaae51414cf827b
+
