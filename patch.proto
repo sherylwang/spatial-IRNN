@@ -1,0 +1,26 @@
+message LayerParameter {  
+  optional RNNDOWNParameter rnn_down_param = 206;
+  optional RNNLEFTParameter rnn_left_param = 207;
+  optional RNNRIGHTParameter rnn_right_param = 208;
+  optional RNNUPParameter rnn_up_param = 209;
+}
+
+message RNNDOWNParameter{
+  optional FillerParameter weight_filler = 1;
+  optional int32 axis = 2 [default = 1];
+}
+
+message RNNLEFTParameter{
+  optional FillerParameter weight_filler = 1;
+  optional int32 axis = 2 [default = 1];
+}
+
+message RNNRIGHTParameter{
+  optional FillerParameter weight_filler = 1;
+  optional int32 axis = 2 [default = 1];
+}
+
+message RNNUPParameter{
+  optional FillerParameter weight_filler = 1;
+  optional int32 axis = 2 [default = 1];
+}

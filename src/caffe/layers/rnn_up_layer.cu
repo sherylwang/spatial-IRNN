@@ -34,10 +34,10 @@ void RNNUPLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& bottom,
   const int count = top[0]->count();
 
   const Dtype* w = this->blobs_[0]->gpu_data();
-  Dtype* top_data = top[0]->mutable_gpu_data(); 
+  Dtype* top_data = top[0]->mutable_gpu_data();
 
   caffe_copy(count, bottom_data, top_data);
- 
+
   for(int i = H_ - 1; i >= 0; i--){
     if(i < H_ - 1){
       caffe_gpu_gemm<Dtype>(CblasNoTrans, CblasNoTrans, NH_, W_ * N_, NH_, Dtype(1.),
@@ -52,7 +52,7 @@ void RNNUPLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& bottom,
 
 template <typename Dtype>
 void RNNUPLayer<Dtype>::Backward_gpu(const vector<Blob<Dtype>*>& top,
-    const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom){  
+    const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom){
   const Dtype* top_diff = top[0]->gpu_diff();
   const Dtype* top_data = top[0]->gpu_data();
   const int count = bottom[0]->count();
@@ -69,9 +69,9 @@ void RNNUPLayer<Dtype>::Backward_gpu(const vector<Blob<Dtype>*>& top,
   ReLUBackward<Dtype><<<CAFFE_GET_BLOCKS(count), CAFFE_CUDA_NUM_THREADS>>>(
       count, f_diff, top_data);
   CUDA_POST_KERNEL_CHECK;
-  
+
   caffe_copy(count, top_diff, h_diff);
-  
+
   for(int i = 0; i < H_; i++){
     // dzdf
     caffe_gpu_mul(NH_ * W_ * N_, h_diff + i * NH_ * N_ * W_,
@@ -99,6 +99,3 @@ void RNNUPLayer<Dtype>::Backward_gpu(const vector<Blob<Dtype>*>& top,
 
 INSTANTIATE_LAYER_GPU_FUNCS(RNNUPLayer);
 }  // namespace caffe
- 
-
-
