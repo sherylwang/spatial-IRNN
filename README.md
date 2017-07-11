@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # spatial-IRNN   
 
 This is the core implementation for the following publication.
@@ -42,3 +43,6 @@ In Proc. ICIP 2017.
 Contact: xiaqing.xu@vipl.ict.ac.cn
 
 ============================================================
+=======
+# spatial-IRNN
+>>>>>>> 5fbd02f19e6fc07b39b8bf71c058a15daddae501
