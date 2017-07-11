@@ -30,7 +30,7 @@ our implementation. You can use other layer having the same function.
 For an example, please refer to the models/ directory! The 'example.prototxt'
 demonstrates the configuration of a single spatial-IRNN layer.
 
--------------------------------------------------------------------
+------------------------------------------------------------------
 Please refer to the following papers if you find the source code helpful:
 
 Xiaqing Xu, Bingpeng Ma, Hong Chang, Xilin Chen
@@ -41,4 +41,4 @@ In Proc. ICIP 2017.
 
 Contact: xiaqing.xu@vipl.ict.ac.cn
 
-============================================================
+====================================================================
