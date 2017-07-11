@@ -43,5 +43,3 @@ Please refer to the following papers if you find the source code helpful:
 
 Contact: hong.chang@vipl.ict.ac.cn  
 
-====================================================================
-=======
