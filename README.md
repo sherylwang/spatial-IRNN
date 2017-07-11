@@ -31,14 +31,13 @@ For an example, please refer to the models/ directory! The 'example.prototxt'
 demonstrates the configuration of a single spatial-IRNN layer.
 
 ------------------------------------------------------------------
-Please refer to the following papers if you find the source code helpful:
+Please refer to the following papers if you find the source code helpful:  
 
-Xiaqing Xu, Bingpeng Ma, Hong Chang, Xilin Chen
-
-SIAMESE RECURRENT ARCHITECTURE FOR VISUAL TRACKING
-
-In Proc. ICIP 2017.
-
-Contact: xiaqing.xu@vipl.ict.ac.cn
-
+    @inproceedings{xu2017siamese,  
+        Author = {Xu, Xiaqing and Ma, Bingpeng and  Chang, Hong and Chen, Xilin},  
+        Title = {Siamese recurrent architecture for visual tracking,  
+        Booktitle = {International Conference on Image Processing (ICIP)},  
+        Year = {2017}
+    }
+Contact: hong.chang@vipl.ict.ac.cn  
 ====================================================================
